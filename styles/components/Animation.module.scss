@@ -1,0 +1,122 @@
+.body_animate {
+  background-position: top, 45% 50%;
+  animation-name: MOVE-BODY-BG;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+
+  .info {
+    opacity: 1;
+    height: auto;
+    bottom: 50%;
+    transform: translateY(110%);
+  }
+}
+
+.content_animate {
+  animation-name: MOVE-BODY-DASHBOARD;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.fade_in {
+  animation-name: FADE_IN;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  min-height: 100vh;
+}
+
+@keyframes MOVE-BODY-BG {
+  from {
+    background-position: top, 45% 40%;
+  }
+  to {
+    background-position: top, 45% 50%;
+  }
+}
+
+@keyframes MOVE-BODY-DASHBOARD {
+  0% {
+    padding: 0;
+    width: 22px;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  5% {
+    padding: 0;
+    width: 22px;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  10% {
+    padding: 0;
+    width: 22px;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  40% {
+    padding: 0;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+
+  45% {
+    padding: 0;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  60% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 30px 50px 60px 50px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 30px 50px 60px 50px;
+  }
+}
+
+
+@keyframes FADE_IN {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  80% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 1;
+  }
+}

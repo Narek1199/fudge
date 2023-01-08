@@ -1,0 +1,17 @@
+.main {
+  @apply flex rounded shadow-custom p-[30px] flex-col;
+
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+
+  .content {
+    font-size: 14px;
+    color: #505050;
+    line-height: 17px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+  }
+}

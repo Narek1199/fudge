@@ -1,0 +1,11 @@
+.info {
+  transition: 1.2s ease;
+  opacity: 0;
+  height: -1px;
+  position: absolute;
+  bottom: 0;
+
+  a {
+    transition: 1.3s ease;
+  }
+}

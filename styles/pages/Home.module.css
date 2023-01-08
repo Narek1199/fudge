@@ -1,0 +1,9 @@
+.main {
+  background: url("/bg-cover.png") no-repeat top fixed, url("/bg-main-image.png") 45% 40% no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}

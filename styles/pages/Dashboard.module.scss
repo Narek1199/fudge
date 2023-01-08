@@ -1,0 +1,74 @@
+.main {
+  min-height: 100vh;
+}
+
+.content {
+  background: #fff;
+}
+
+.section {
+  @apply flex gap-8 my-8 xl:flex-row flex-col;
+
+  .mainBox {
+    @apply flex sm:flex-row flex-col gap-5;
+  }
+
+  .financialHealth {
+    @apply shadow-custom flex-col flex-1;
+
+    & > div {
+      @apply px-12 py-4;
+    }
+
+    .line {
+      @apply bg-gradient-to-r from-[#ff0000] via-[#ff8000] to-[#00ff00] h-[3px] relative mt-4;
+
+      .range {
+        @apply absolute left-[88%] bottom-0;
+        font-size: 14px;
+        line-height: 17px;
+
+        .dot {
+          @apply h-3 w-2 block bg-[#3de100] rounded-t-full;
+        }
+      }
+    }
+
+    .lineTitle {
+      @apply flex items-center justify-between;
+
+      p {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: bold;
+        color: #f00;
+
+        &:nth-child(2) {
+          color: #ff8000;
+        }
+
+        &:last-child {
+          color: #0f0;
+        }
+      }
+    }
+
+    .info {
+      @apply text-center;
+      font-size: 12px;
+      line-height: 14px;
+      padding-top: 10px;
+
+      .good {
+        color: #0f0;
+      }
+
+      .link {
+        @apply text-blue-900 underline;
+      }
+    }
+  }
+}
+
+//

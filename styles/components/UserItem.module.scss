@@ -1,0 +1,14 @@
+.status {
+  position: relative;
+  padding-left: 12px;
+  &:before {
+    position: absolute;
+    content: '';
+    background: #7FCC6D;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
